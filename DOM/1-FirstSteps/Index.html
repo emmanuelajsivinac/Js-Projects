@@ -3,26 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Index.css">
+    <link rel="stylesheet" href="./Index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>DOM First Steps</title>
 </head>
 <body>
     <div class="main-container">
-        <h1>Select an Item</h1>
+        <h1>Select your Courses</h1>
         <div class="options-section">
             <div class="option">
-                <label>HTML</label>
-                <input type="checkbox">
+                <i class="devicon-html5-plain colored"></i>
+                <input type="checkbox" id="html-course">
             </div>
             <div class="option">
-                <label>CSS</label>
-                <input type="checkbox">
+                <i class="devicon-css3-plain colored"></i>
+                <input type="checkbox" id="css-course">
             </div>
             <div class="option">
-                <label>JS</label>
-                <input type="checkbox">
+                <i class="devicon-javascript-plain colored"></i>
+                <input type="checkbox" id="js-course">
             </div>
         </div>
+        <button id="send-courses">Send Request</button>
     </div>
+    <script src="Index.js"></script>
 </body>
 </html>
